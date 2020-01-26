@@ -7,9 +7,9 @@ Note apps feel unnatural. Creating a task, clicking it for a subtask, hitting en
 Seamless takes care of that.
 
 #### Example
-Typing "Do laundy: separate by colors, wash, dry, put away."
+Typing "Do laundry: separate by colors, wash, dry, put away."
 
-Outputs your main task (in this case, "Do laundy") with its subtasks nested, and understands you're done for now with the full stop, so it creates a new task ready for you to write.
+Outputs your main task (in this case, "Do laundry") with its subtasks nested, and understands you're done for now with the full stop, so it creates a new task ready for you to write.
 
 ## Use
 
