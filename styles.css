@@ -1,13 +1,19 @@
 body{
 	font-family: 'Montserrat', sans-serif;
+	margin-left: 30px;
+}
+
+.taskContainer{
+	margin-left: 20px;
 }
 
 .task{
-	width: 100%;
+	width: 90%;
 	border-right: none;
 	border-left: none;
 	border-top: none;
 	height:40px;
+	padding-left: 10px;
 }
 
 .subtask{
@@ -15,7 +21,8 @@ body{
 	border-right: none;
 	border-left: none;
 	border-top: none;
-	width: 100%;
+	width: 89%;
 	height: 40px;
 	margin-left: 20px;
+	padding-left: 10px;
 }
