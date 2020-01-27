@@ -41,4 +41,10 @@ h1 input:focus{
 	height: 40px;
 	margin-left: 20px;
 	padding-left: 10px;
+	clear: right;
+}
+
+.checkbox{
+	width:17px;
+	height: 17px;
 }

@@ -15,6 +15,7 @@ document.addEventListener("keydown", function(event) {//on each key press it che
         var newSubtask = document.createElement("input"); //creates input
         newSubtask.classList.add("subtask"); //adds the class subtask
         appendInputAttributes(newSubtask); //adds name and placeholder attributes
+        createCheckbox('taskContainer');
        	document.getElementsByClassName('taskContainer')[lengthOfTasks].appendChild(newSubtask); //appends subtask
        	newSubtask.focus(); //Type-ready on creation
         
@@ -31,8 +32,8 @@ document.addEventListener("keydown", function(event) {//on each key press it che
     	//creates new TaskContainer and task input
     	var newTaskContainer = document.createElement("div");
     	newTaskContainer.classList.add("taskContainer");
-
     	var newTask = document.createElement("input");
+        createCheckbox(newTaskContainer)
     	newTask.classList.add("task");
     	appendInputAttributes(newTask);
     	newTaskContainer.appendChild(newTask);
@@ -40,7 +41,21 @@ document.addEventListener("keydown", function(event) {//on each key press it che
     	document.body.appendChild(newTaskContainer);
     	newTask.focus(); //ready to type on creation
     }
+
+    function createCheckbox(whereToAppend){
+        var newline = document.createElement("br");
+        var checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.classList.add = "checkbox";
+        if(whereToAppend =='taskContainer'){
+        document.getElementsByClassName(whereToAppend)[lengthOfTasks].appendChild(newline);
+        document.getElementsByClassName(whereToAppend)[lengthOfTasks].appendChild(checkbox);
+        }else if (whereToAppend == newTaskContainer){
+            newTaskContainer.appendChild(checkbox);
+        }
+    }
 })
+
 
 
 function appendInputAttributes(input){ //Adds the attributes to text inputs
