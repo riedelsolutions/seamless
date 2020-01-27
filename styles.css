@@ -3,6 +3,22 @@ body{
 	margin-left: 30px;
 }
 
+h1 input {
+	border:none;
+	font-family:'Montserrat', sans-serif;
+	font-weight: bold;
+	color: #000;
+	font-size: 30px;
+}
+
+h1 input::placeholder{
+	color: black;
+}
+
+h1 input:focus{
+	color:grey;
+}
+
 .taskContainer{
 	margin-left: 20px;
 }
